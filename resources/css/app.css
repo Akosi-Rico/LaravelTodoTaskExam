@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.table-thead {
+    @apply px-1 border-l-2 text-center font-sans py-1 border-b-2 border-gray-300 bg-gray-200 text-sm leading-3 font-medium text-slate-50 uppercase tracking-wider;
+}
+
+.table-tbody {
+    @apply px-1 py-1 text-sm font-sans border-l-2 text-center border ;
+}
+
+.button-primary {
+   @apply bg-blue-500 text-xs hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 mx-1;
+}
+
+.button-danger {
+    @apply bg-orange-500 text-xs hover:bg-orange-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 mx-1;
+}
+
+.button-warning {
+    @apply bg-red-500 text-xs hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 mx-1;
+}
+
+.error-text {
+    @apply text-sm font-sans text-red-600;
+}
+
+.error-field {
+    @apply border-red-500;
+}
+
+.input-field {
+    @apply shadow-sm appearance-none border text-sm rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+}
+
+.treeselect-invalid .vue-treeselect__control {
+    @apply border-red-500 border-solid;
+}
+
+table.dataTable thead th {
+    @apply text-slate-50 text-center border; /* Tailwind's gray-200 */
+}
+
+.table-body {
+    @apply bg-slate-50 border divide-y divide-double  divide-[#1c283c]   whitespace-nowrap text-sm text-slate-700;
+}
+
+.modal {
+    @apply fixed inset-0 z-50 items-center justify-center bg-gray-800 bg-opacity-75 transition-all duration-1000 ease-in-out rounded-md h-auto overflow-y-auto;
+}
+
+.dropzone, .files {
+   @apply w-full m-auto p-10 border rounded-lg shadow-sm text-lg
+}
+
+.border-drop {
+    @apply  border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center p-5 transition-all duration-300 ease-in-out bg-slate-50;
+}
+
+.is-drag-active {
+@apply border-yellow-500 bg-yellow-100;
+}
+
+.file-item {
+    @apply rounded-lg flex items-center justify-between bg-orange-200/20 p-2 pl-4 mt-10;
+  
+    &:first-child {
+      @apply mt-0;
+    }
+  
+   .delete-file {
+      @apply bg-red-500 text-white px-4 py-2 rounded-lg cursor-pointer;
+    }
+}
